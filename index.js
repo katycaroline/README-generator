@@ -25,17 +25,27 @@ const questions = [
         message: "How can your project be used?",
     },
     {
+        type: "input",
+        name: "credits",
+        message: "Who worked on this project?",
+    },
+    {
         type: "list",
         name: "license",
         message: "Please select a license for this project.",
         choices: [
-            "GNU AGPLv3",
-            "GNU GPLv3",
-            "GNU LGPLv3",
-            "Apache 2.0",
-            "Boost Software 1.0",
-            "MIT",
-            "Mozilla",
+            "GNU General Public License v3.0",
+            "MIT License",
+            "BSD 2-Clause 'Simplified' License",
+            "BSD 3-Clause 'New' or 'Revised' License",
+            "Boost Software License 1.0",
+            "Creative Commons Zero v1.0 Universal",
+            "Eclipse Public License 2.0",
+            "GNU Affero General Public License v3.0",
+            "GNU General Public License v2.0",
+            "GNU Lesser General Public License v2.1",
+            "Mozilla Public License 2.0",
+            "The Unlicense"
         ],
     },
     {
@@ -47,7 +57,12 @@ const questions = [
         type: "input",
         name: "userName",
         message: "What is your GitHub username?",
-    }
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is your email?",
+    },
 ];
 
 // TODO: Create a function to write README file
